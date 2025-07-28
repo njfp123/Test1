@@ -1,0 +1,13 @@
+# Located in the root of your project
+
+[build]
+  # This tells Netlify where our serverless functions are.
+  functions = "netlify/functions"
+
+# This is a rule to make our API cleaner. 
+# It redirects requests from /api/* to the correct function path.
+# While not used in the current JS, it's good practice.
+[[redirects]]
+  from = "/api/*"
+  to = "/.netlify/functions/:splat"
+  status = 200

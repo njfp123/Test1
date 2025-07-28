@@ -1,0 +1,8 @@
+{
+  "name": "community-wish-list",
+  "version": "1.0.0",
+  "description": "A simple wish list app with Netlify and Neon.",
+  "dependencies": {
+    "pg": "^8.11.3"
+  }
+}
